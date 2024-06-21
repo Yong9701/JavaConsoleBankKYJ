@@ -1,4 +1,4 @@
-package banking7;
+package banking7.threeby3_3;
 
 import java.io.EOFException;
 import java.io.FileInputStream;
@@ -28,8 +28,8 @@ public class AccountManager {
 		System.out.println("3.출 금");
 		System.out.println("4.계좌정보출력");
 		System.out.println("5.계좌정보삭제");
-		System.out.println("6.저장옵션");
-		System.out.println("7.프로그램종료");
+		System.out.println("7.3 by 3 퍼즐게임");
+		System.out.println("8.프로그램종료");
 	}
 	// 계좌개설 선택 시 보통계좌와 신용신뢰계좌 보여주기
 	public static void showAccount() {
@@ -345,6 +345,11 @@ public class AccountManager {
 	    	System.out.println("예외발생");
 	    	e.printStackTrace();
 	    }
+	}
+	
+	public void puzzleStart() {
+		threeby3Main pz = new threeby3Main();
+		pz.threeby3Start();
 	}
 	
 	// IO입출력, 7번 프로그램종료시 AccountInfo.obj에 개설된 모든 계좌를 저장한다.

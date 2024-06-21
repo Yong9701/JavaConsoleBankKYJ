@@ -7,7 +7,7 @@ public class BankingSystemMain {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		AccountManager manager = new AccountManager(50);
+		AccountManager manager = new AccountManager();
 		
 		while(true) {
 			// 1. 메뉴를 출력

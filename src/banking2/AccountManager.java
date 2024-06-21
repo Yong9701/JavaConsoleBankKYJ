@@ -3,11 +3,11 @@ package banking2;
 import java.util.Scanner;
 
 public class AccountManager {
-	private Account[] myAccount;
+	private Account myAccount[] = new Account[50];
 	private int numOfAccount;
 	
-	public AccountManager(int num) {
-		myAccount = new Account[num];
+	public AccountManager() {
+//		myAccount = new Account[num];
 		numOfAccount = 0;
 	}
 	public static void showMenu() {
